@@ -27,8 +27,8 @@ bash ./link.sh --and-run clang --version
 ### x86-64
 Requirements: `elfshaker`, `wget`, `git`, `docker`
 
-Please note, that so far, moment packs are only published for aarch64 binaries.
-However, these binaries can run under qemu with some performance impact. For
+Please note, that so far, packs are only published for aarch64 binaries.
+However, these binaries can run under QEMU with some performance impact. For
 small code fragments, or some use cases, the impact may be tolerable.
 
 Replace `YYYYMM` below with the month and year for which you wish to fetch builds.
