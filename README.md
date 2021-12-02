@@ -6,7 +6,7 @@ It provides [elfshaker](https://github.com/elfshaker/elfshaker) pack files, each
 ## Quickstart
 
 ### AArch64
-Requirements: `elfshaker`, `wget`, `git`
+Requirements: Ubuntu 20.04, `elfshaker`, `wget`, `git`, `lld-12`, `clang-12`
 
 Replace `YYYYMM` below with the month and year for which you wish to fetch builds.
 ```bash
