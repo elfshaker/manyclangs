@@ -230,6 +230,11 @@ Important highlghts:
 
 ### See also
 - [manyclangs-run](https://github.com/elfshaker/elfshaker/blob/main/contrib/manyclangs-run) can be used to seamlessly run any commit of LLVM from your source code repo.
+- Talk from the 2021 LLVM Developers' Meeting
+
+  <a href="https://www.youtube.com/watch?v=l2KWOqEGRwg">
+    <img src="https://img.youtube.com/vi/l2KWOqEGRwg/0.jpg" width="240" alt="2021 LLVM Dev Mtg “Manyclangs: Fast bisection with a small storage cost">
+  </a>
 
 ## Contact
 
