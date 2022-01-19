@@ -85,7 +85,7 @@ elfshaker list aarch64-ubuntu2004-manyclangs-202005
 elfshaker extract 20200531-02712T150722-dfbfdc96f9e15be
 ```
 
-The extraction should only take 1-2s. You will then notice that the `manyclangs/` directory will not contain a number of other files and directories, including `link.sh`, `COMMIT_SHA` and `lib/` among others.
+The extraction should only take 1-2s. You will then notice that the `manyclangs/` directory contains a number of other files and directories, including `link.sh`, `COMMIT_SHA` and `lib/` among others.
 
 The `elfshaker extract` step extracted the pre-built `.o` files for commit `dfbfdc96f9e15be` of the LLVM repo. You now need to run `link.sh` to link these into an executable.
 ```bash
