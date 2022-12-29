@@ -25,7 +25,7 @@ bash ./link.sh --and-run clang --version
 ```
 
 ### x86-64
-Requirements: `elfshaker`, `wget`, `git`, `docker`
+Requirements: `elfshaker`, `wget`, `git`, `docker`, `binfmt-support`, `qemu-user-static`
 
 Please note, that so far, packs are only published for aarch64 binaries.
 However, these binaries can run under QEMU with some performance impact. For
@@ -48,6 +48,8 @@ Run any one of them using:
 elfshaker extract $SNAPSHOT # e. g. 20210930-02593T202653-2df2b27d94f9268
 docker run --rm -it  --mount type=bind,source="$(pwd)",target=/elfshaker manyclangs-qemu-aarch64  bash -c 'bash ./link.sh --and-run clang --version'
 ```
+
+If you get an error similar to `/usr/bin/clang++-12: cannot execute binary file: Exec format error`, be sure you've installed the packages `binfmt-support` and `qemu-user-static` and try again.
 
 ## User Guide
 
