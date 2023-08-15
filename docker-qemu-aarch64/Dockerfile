@@ -16,8 +16,10 @@ RUN apt-get update \
         libc6-lse:arm64=2.* \
         libgcc-s1:arm64=10.* \
         libtinfo6:arm64=6.* \
+        libzstd1:arm64=1.* \
         qemu-user \
     && ln -s /usr/lib/aarch64-linux-gnu/libtinfo.so.6 /usr/lib/aarch64-linux-gnu/libtinfo.so \
+    && ln -s /usr/lib/aarch64-linux-gnu/libzstd.so.1 /usr/lib/aarch64-linux-gnu/libzstd.so \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt \
