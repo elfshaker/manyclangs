@@ -18,6 +18,7 @@ RUN apt-get update \
         libtinfo6:arm64=6.* \
         libzstd1:arm64=1.* \
         qemu-user \
+        python3 \
     && ln -s /usr/lib/aarch64-linux-gnu/libtinfo.so.6 /usr/lib/aarch64-linux-gnu/libtinfo.so \
     && ln -s /usr/lib/aarch64-linux-gnu/libzstd.so.1 /usr/lib/aarch64-linux-gnu/libzstd.so \
     && apt-get clean \
